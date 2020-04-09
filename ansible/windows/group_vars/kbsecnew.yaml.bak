@@ -1,0 +1,11 @@
+---
+- name: install the mentioned KB updates
+  hosts: wintel
+  tasks:
+    - name: Install updates
+      win_updates:
+        category_names:
+          - SecurityUpdates
+        whitelist:
+          - KB4489899
+        state: installed

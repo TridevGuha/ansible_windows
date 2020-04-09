@@ -1,0 +1,9 @@
+---
+- name: install the mentioned KB updates
+  hosts: wintel
+  tasks:
+    - name: Install updates
+      win_updates:
+        category_names:
+          - SecurityUpdates
+        update_count: success

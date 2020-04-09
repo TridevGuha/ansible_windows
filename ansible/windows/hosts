@@ -1,0 +1,8 @@
+[wintel]
+192.168.111.134
+
+[wintel:vars]
+ansible_user=Student
+ansible_password=redhat
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore

@@ -1,0 +1,5 @@
+---
+- hosts: wintel
+  tasks:
+  - name: ping testing
+    win_ping:
